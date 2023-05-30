@@ -1,0 +1,17 @@
+.partners {
+    .container {
+        padding: 100px 160px 48px 160px;
+    }
+
+    &__companies {
+        height: 72px;
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .headline {
+        text-align: center;
+    }
+}

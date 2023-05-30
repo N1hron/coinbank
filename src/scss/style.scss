@@ -1,0 +1,88 @@
+@import './normalize';
+@import './fonts';
+
+$main: #0E0637;
+$secondary: #DAF727;
+$neutral400: #9C9CAB;
+$neutral500: #717184;
+$neutral900: #131316;
+$primary-shade: #D6D1FA;
+$primary-shade100: #EFEDFD;
+$primary: #5235E8;
+
+* {
+    font-family: 'Aeonik', sans-serif;
+    color: $main;
+    font-feature-settings: 'ss06' on;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.headline {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: -0.01em;
+        margin: 16px 0;
+
+        &_main {
+            font-size: 64px;
+            line-height: 110%;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $primary;
+        max-width: 457px;
+        margin: 0;
+
+        &.headline__description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            letter-spacing: 0.005em;
+            text-transform: unset;
+            color: $neutral500;
+        }
+    }
+}
+
+@import './buttons';
+@import './header';
+@import './promo';
+@import './partners';
+@import './dashboard';
+@import './blockchains';

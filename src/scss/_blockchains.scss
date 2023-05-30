@@ -1,0 +1,33 @@
+.blockchains {
+    position: relative;
+    background: linear-gradient(0deg, #FFFFFF 0%, #EFEDFD 46.09%);
+    padding: 100px 160px 48px;
+
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+
+    &__background-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__lines {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        top: 0;
+    }
+
+    p {
+        max-width: 550px;
+    }
+
+    &__illustration {
+        margin: 80px auto 0;
+        display: block;
+    }
+}
