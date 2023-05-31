@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,30 +24,30 @@
             <nav class="header__nav">
                 <ul class="header__nav-items">
                     <li class="header__nav-item">
-                        <a href="#">Features<img data-toggle src="./images/arrow.svg" alt="arrow" class="header__subnav-arrow"></a>
+                        <a data-toggle href="#">Features<img src="./images/arrow.svg" alt="arrow" class="header__subnav-arrow"></a>
                         <div class="header__subnav">
                             <span>Features</span>
                             <ul class="header__subnav-items">
-                                <li class="header__subnav-item">
-                                    <a href="#">
+                                <li data-toggle class="header__subnav-item">
+                                    <a data-toggle href="#">
                                         <img src="./images/funding.svg" alt="funding">
                                         Funding
                                     </a>
                                 </li>
                                 <li class="header__subnav-item">
-                                    <a href="#">
+                                    <a data-toggle href="#">
                                         <img src="./images/Staking.svg" alt="staking">
                                         Staking
                                     </a>
                                 </li>
                                 <li class="header__subnav-item">
-                                    <a href="#">
+                                    <a data-toggle href="#">
                                         <img src="./images/liquidity.svg" alt="liquidity">
                                         Liquidity
                                     </a>
                                 </li>
                                 <li class="header__subnav-item">
-                                    <a href="#">
+                                    <a data-toggle href="#">
                                         <img src="./images/margin_trading.svg" alt="margin trading">
                                         Margin Trading
                                     </a>
@@ -56,31 +56,31 @@
                         </div>
                         <div class="header__nav-item-background"></div>
                     </li>
-                    <li class="header__nav-item"><a href="#">Prices</a></li>
+                    <li class="header__nav-item"><a data-toggle href="#">Prices</a></li>
                     <li class="header__nav-item">
-                        <a href="#">Company<img src="./images/arrow.svg" alt="arrow" class="header__subnav-arrow"></a>
+                        <a data-toggle href="#">Company<img src="./images/arrow.svg" alt="arrow" class="header__subnav-arrow"></a>
                         <div class="header__subnav">
                             <span>Company</span>
                             <ul class="header__subnav-items">
-                                <li class="header__subnav-item">
+                                <li data-toggle class="header__subnav-item">
                                     <a href="#">
                                         <img src="./images/about.svg" alt="about">
                                         About
                                     </a>
                                 </li>
-                                <li class="header__subnav-item">
+                                <li data-toggle class="header__subnav-item">
                                     <a href="#">
                                         <img src="./images/blog.svg" alt="blog">
                                         Blog
                                     </a>
                                 </li>
-                                <li class="header__subnav-item">
+                                <li data-toggle class="header__subnav-item">
                                     <a href="#">
                                         <img src="./images/faqs.svg" alt="faqs">
                                         FAQs
                                     </a>
                                 </li>
-                                <li class="header__subnav-item">
+                                <li data-toggle class="header__subnav-item">
                                     <a href="#">
                                         <img src="./images/support.svg" alt="support">
                                         Support
@@ -90,7 +90,7 @@
                         </div>
                         <div class="header__nav-item-background"></div>
                     </li> 
-                    <li class="header__nav-item"><a href="#">Developers</a></li>
+                    <li class="header__nav-item"><a data-toggle href="#">Developers</a></li>
                 </ul>
             </nav>
             <div class="header__buttons">
@@ -129,7 +129,14 @@
                     </div>
                 </div>
             </div>
-            <img src="./images/lines.png" alt="lines" class="promo__lines">
+            <div class="lines">
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+            </div>
         </section>
         <section class="partners">
             <div class="container">
@@ -155,7 +162,14 @@
                 </div>
                 <img src="./images/dashboard_illustration.png" alt="dashboard" class="dashboard__illustration">
             </div>
-            <img src="./images/lines.png" alt="pattern" class="dashboard__lines">
+            <div class="lines">
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+            </div>
             <img src="./images/dashboard_pattern.png" alt="pattern" class="dashboard__background-image">
         </section>
         <section class="blockchains">
@@ -167,8 +181,83 @@
                 </div>
                 <img src="./images/blockchains_illustration.png" alt="dashboard" class="blockchains__illustration">
             </div>
-            <img src="./images/lines.png" alt="pattern" class="blockchains__lines">
+            <div class="lines">
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+            </div>
             <img src="./images/blockchains_pattern.png" alt="pattern" class="blockchains__background-image">
+        </section>
+        <section class="supercharge">
+            <div class="container">
+                <div class="headline">
+                    <p>Features</p>
+                    <h2 class="headline__title">Supercharge your trades with advanced features</h2>
+                </div>
+                <div class="supercharge__cards">
+                    <div class="supercharge__card">
+                        <img src="./images/supercharge_illustration.png" alt="graph" class="supercharge__illustration">
+                        <div class="supercharge__text">
+                            <h3>Grow and earn everyday</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                    <div class="supercharge__card">
+                        <img src="./images/supercharge_illustration2.png" alt="virtual card" class="supercharge__illustration">
+                        <div class="supercharge__text">
+                            <h3>Virtual cards powered by Mastercard</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lines">
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+            </div>
+        </section>
+        <section class="trading">
+            <div class="container">
+                <div class="headline">
+                    <p>Features</p>
+                    <h2 class="headline__title">Seamless Trading</h2>
+                    <div class="headline__text-wrapper">
+                        <p class="headline__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor.</p>
+                        <p class="headline__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. </p>
+                    </div>
+                </div>
+                <div class="trading__chart-container"></div>
+                <div class="trading__cards">
+                    <div class="trading__btc-card">
+                        <div class="trading__btc-card-prices">
+                            <p>$6278.13<span>Last price</span></p>
+                            <p>38.25 BTC<span>Volume (24h)</span></p>
+                        </div>
+                        <div class="trading__btc-card-select">
+                            <button>Monthly <img src="./images/chevron_down.svg" alt="arrow"></button>
+                            
+                        </div>
+                    </div>
+                    <div class="trading__watchlist-card">
+
+                    </div>
+                </div>
+            </div>
+            <div class="lines">
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+                <div class="lines__line"></div>
+            </div>
         </section>
     </main>
     <script src="./main.js"></script>

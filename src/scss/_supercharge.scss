@@ -1,0 +1,61 @@
+.supercharge {
+    position: relative;
+
+    .container {
+        position: relative;
+        padding: 100px 160px;
+        z-index: 2;
+    }
+
+    &__text {
+        padding: 32px 48px 48px 48px;
+
+        h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            letter-spacing: 0.005em;
+            color: $neutral700;
+            margin: 16px 0 0;
+        }
+    }
+
+    &__illustration {
+        position: relative;
+        height: 254px;
+        width: 548px;
+        left: -2px;
+        top: -2px;
+    }
+
+    &__card {
+        max-width: 544px;
+        height: 460px;
+        border: 2px solid $primary-shade100;
+        box-shadow: 0px 12px 80px rgba(82, 53, 232, 0.1);
+        border-radius: 24px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    &__cards {
+        margin-top: 88px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__lines {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+}

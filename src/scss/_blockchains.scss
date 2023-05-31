@@ -2,6 +2,7 @@
     position: relative;
     background: linear-gradient(0deg, #FFFFFF 0%, #EFEDFD 46.09%);
     padding: 100px 160px 48px;
+    overflow: hidden;
 
     .container {
         position: relative;
@@ -12,6 +13,7 @@
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 2;
     }
 
     &__lines {

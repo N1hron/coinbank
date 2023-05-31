@@ -5,6 +5,7 @@ $main: #0E0637;
 $secondary: #DAF727;
 $neutral400: #9C9CAB;
 $neutral500: #717184;
+$neutral700: #42424D;
 $neutral900: #131316;
 $primary-shade: #D6D1FA;
 $primary-shade100: #EFEDFD;
@@ -18,7 +19,7 @@ $primary: #5235E8;
     box-sizing: border-box;
 }
 
-h1 {
+h1, h2, h3, p {
     margin: 0;
 }
 
@@ -80,9 +81,30 @@ ul {
     }
 }
 
+.lines {
+    position: absolute;
+    max-width: 1120px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    
+    &__line {
+        height: 100%;
+        width: 1px;
+        background: linear-gradient(0deg, rgba(231, 227, 252, 0) 0%, #E7E3FC 0%, #FFFFFF 100%);
+    }
+}
+
 @import './buttons';
 @import './header';
 @import './promo';
 @import './partners';
 @import './dashboard';
 @import './blockchains';
+@import './supercharge';
+@import './trading';

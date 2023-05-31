@@ -17,6 +17,14 @@
     &_dark {
         background-color: $primary;
         color: #FFFFFF;
-        border: none
+        border: none;
+
+        &:hover {
+            background-color: #4b30d1;
+        }
+
+        &:active {
+            background-color: #442cba;
+        }
     }
 }

@@ -1,33 +1,20 @@
-export default function navItem(selector, activeClass, parentSelector) {
-    const parent = document.querySelector(parentSelector);
-    const items = parent.querySelectorAll(selector);
-   
-    items.forEach(item => {
-        item.addEventListener('click', (event) => {
-            closeAll(item);
-            if(['A', 'IMG'].includes(event.target.tagName)) {
-                item.classList.toggle(activeClass);
-            } else {
-                item.classList.add(activeClass);
-            }
-        })
-    })
+export default function navItem(itemSelector, activeClass) {
+    const items = document.querySelectorAll(itemSelector);
 
     document.addEventListener('click', (event) => {
-        if(!itemsInclude(event.target)) closeAll();
+        const target = event.target,
+              parent = target.closest(itemSelector);
+
+        if((target.hasAttribute('data-toggle') || target.closest('[data-toggle]')) && parent) {
+            closeAll(parent);
+            parent.classList.toggle(activeClass)
+        } else if(!parent) closeAll();
     })
     
-    function itemsInclude(element) {
-        let result = false;
-        items.forEach(item => {
-            if(item == element || item.contains(element)) result = true;
-        })
-        return result;
-    }
-
     function closeAll(exception) {
         items.forEach(item => {
             if(item != exception) item.classList.remove(activeClass);
         });
     }
 }
+
