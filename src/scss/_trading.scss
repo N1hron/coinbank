@@ -13,13 +13,211 @@
         justify-content: center;
     }
 
-    &__watchlist-card {
+    select {
+        display: none;
+    }
+
+    &__select {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        img {
+            transition: all 0.1s;
+        }
+
+        ul {
+            top: (calc(100% + 7px));
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #E3E3E8;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 135%;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            z-index: 3;
+            overflow: hidden;
+            transform-origin: 50% 0;
+
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0);
+            transition: all ease-out 0.1s;
+
+            li {
+                padding: 8px 12px;
+                transition: background-color 0.05s;
+
+                &:hover {
+                    background-color: #e3e3e3;
+                }
+            }
+        }
+
+        button {
+            padding: 8px 12px;
+            width: 93px;
+            height: 32px;
+            background: #FFFFFF;
+            border: 1px solid #E3E3E8;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 135%;
+            cursor: pointer;
+        }
+
+        &_active {
+            img {
+                transform: rotate(180deg);
+            }
+            
+            ul {
+                opacity: 1;
+                visibility: visible;
+                height: initial;
+                transform: scale(100%);
+            }
+        }
+    }
+
+    &__currency {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 145%;
+        gap: 53px;
+
+        &:nth-of-type(1) {
+            .trading__currency-bar {
+                max-width: 66px;
+            }
+        }
+
+        &:nth-of-type(3) {
+            .trading__currency-bar {
+                max-width: 74px;
+            }
+        }
+
+        &:nth-of-type(5) {
+            .trading__currency-bar {
+                max-width: 50px;
+            }
+        }
+
+        &-percentages {
+            position: relative;
+            padding: 6px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 135%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.005em;
+            color: $success;
+            background: #ECFDF7;
+            width: 60px;
+            height: 24px;
+            border-radius: 100px;
+            border: 1px solid #DAFBEF;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background: url('./images/green_arrow.svg');
+                width: 12px;
+                height: 12px;
+                left: 6px;
+                top: 6px;
+            }
+        }
+
+        &-bar {
+            margin-top: 9px;
+            height: 6px;
+            background-color: $secondary;
+            border-radius: 2px;
+        }
+
+        &-price {
+            margin-left: 3px;
+            max-width: 87px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            span {
+                color: #FFFFFF;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            gap: 12px;
+            
+            p {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2px;
+                color: #FFFFFF;
+
+                span {
+                    font-size: 12px;
+                    line-height: 135%;
+                    letter-spacing: 0.005em;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+
+    &__currencies {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        z-index: 1;
+
+        &-separator {
+            max-width: 236px;
+            height: 1px;
+            background-color: $primary-shade;
+            opacity: 0.2;
+            margin: 16px 0;
+        }
+    }
+
+    &__watchlist {
         overflow: hidden;
         position: relative;
         background: $primary;
         min-height: 290px;
         margin-top: 40px;
         border-radius: 16px;
+        padding: 32px;
+
+        h3 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 160%;
+            letter-spacing: 0.005em;
+            color: #FFFFFF;
+        }
 
         &:before {
             position: absolute;
@@ -33,17 +231,19 @@
             background: linear-gradient(178.59deg, rgba(255, 255, 255, 0.7) 0.29%, rgba(255, 255, 255, 0) 97.53%);
             filter: blur(50px);
             transform: rotate(142.04deg);
+            z-index: 0;
         }
 
         &:after {
             position: absolute;
             content: '';
             display: block;
-            background: url('./images/trading_card-corner.png');
-            top: 0;
-            right: 0;
-            width: 158px;
-            height: 189px;
+            background: url('./images/trading_card_corner.png');
+            top: -133.13px;
+            right: -99.35px;
+            width: 258px;
+            height: 288px;
+            z-index: 0;
         }
     }
 
@@ -55,24 +255,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        &-select {
-            button {
-                padding: 8px 12px;
-                width: 93px;
-                height: 32px;
-                background: #FFFFFF;
-                border: 1px solid #E3E3E8;
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 135%;
-                cursor: pointer;
-            }
-        }
 
         &-prices {
             display: flex;

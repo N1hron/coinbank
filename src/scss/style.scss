@@ -9,7 +9,9 @@ $neutral700: #42424D;
 $neutral900: #131316;
 $primary-shade: #D6D1FA;
 $primary-shade100: #EFEDFD;
+$primary-shade50:#F7F6FE;
 $primary: #5235E8;
+$success: #11CF8B;
 
 * {
     font-family: 'Aeonik', sans-serif;
@@ -108,3 +110,4 @@ ul {
 @import './blockchains';
 @import './supercharge';
 @import './trading';
+@import './testimonials';

@@ -1,4 +1,4 @@
-export default function navItem(itemSelector, activeClass) {
+export default function navbar(itemSelector, activeClass) {
     const items = document.querySelectorAll(itemSelector);
 
     document.addEventListener('click', (event) => {
@@ -6,6 +6,7 @@ export default function navItem(itemSelector, activeClass) {
               parent = target.closest(itemSelector);
 
         if((target.hasAttribute('data-toggle') || target.closest('[data-toggle]')) && parent) {
+            if(parent.contains(parent.querySelector('ul'))) event.preventDefault();
             closeAll(parent);
             parent.classList.toggle(activeClass)
         } else if(!parent) closeAll();

@@ -9,6 +9,15 @@
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0.005em;
+    transition: background-color 0.08s;
+
+    &:hover {
+        background-color: $primary-shade100;
+    }
+
+    &:active {
+        background-color:#e5e0fc;;
+    }
 
     &_dark-text {
         color: $primary;

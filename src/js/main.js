@@ -1,7 +1,9 @@
-import navItem from "./modules/navItem";
+import navbar from "./modules/navbar";
+import select from "./modules/select";
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
-    navItem('.header__nav-item', 'active')
+    navbar('.header__nav-item', 'active');
+    select('#trading-select');
 })

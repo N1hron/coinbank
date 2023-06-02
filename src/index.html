@@ -240,13 +240,42 @@
                             <p>$6278.13<span>Last price</span></p>
                             <p>38.25 BTC<span>Volume (24h)</span></p>
                         </div>
-                        <div class="trading__btc-card-select">
-                            <button>Monthly <img src="./images/chevron_down.svg" alt="arrow"></button>
-                            
-                        </div>
+                        <select id="trading-select">
+                            <option value="daily">Daily</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                        </select>
                     </div>
-                    <div class="trading__watchlist-card">
-
+                    <div class="trading__watchlist">
+                        <h3>My Watchlist</h3>
+                        <div class="trading__currencies">
+                            <div class="trading__currency">
+                                <div class="trading__currency-wrapper">
+                                    <img src="./images/tether.svg" alt="tether">
+                                    <p>Tether<span class="trading__abbr">USDT</span></p>
+                                </div>
+                                <div class="trading__currency-price"><span>$165,8</span><div class="trading__currency-bar"></div></div>
+                                <div class="trading__currency-percentages">1.37%</div>
+                            </div>
+                            <div class="trading__currencies-separator"></div>
+                            <div class="trading__currency">
+                                <div class="trading__currency-wrapper">
+                                    <img src="./images/bitcoin.svg" alt="bitcoin">
+                                    <p>Bitcoin<span class="trading__abbr">BTC</span></p>
+                                </div>
+                                <div class="trading__currency-price"><span>$1,236.21</span><div class="trading__currency-bar"></div></div>
+                                <div class="trading__currency-percentages">1.37%</div>
+                            </div>
+                            <div class="trading__currencies-separator"></div>
+                            <div class="trading__currency">
+                                <div class="trading__currency-wrapper">
+                                    <img src="./images/achain.svg" alt="achain">
+                                    <p>Achain<span class="trading__abbr">ACN</span></p>
+                                </div>
+                                <div class="trading__currency-price"><span>$165,8</span><div class="trading__currency-bar"></div></div>
+                                <div class="trading__currency-percentages">1.37%</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -257,6 +286,41 @@
                 <div class="lines__line"></div>
                 <div class="lines__line"></div>
                 <div class="lines__line"></div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="headline">
+                    <p>Testimonials</p>
+                    <h2 class="headline__title">Trusted by more than 100K+ people</h2>
+                    <p class="headline__description">Hear what they say about us and why you should choose Coinbank.</p>
+                </div>
+                <div class="testimonials__cards">
+                    <div class="testimonials__card">
+                        <img src="./images/stars.svg" alt="stars">
+                        <p class="testimonials__card-text">&quot;Cool crypto currency, fast withdrawals and deposits, way better, than any wallet.&quot;</p>
+                        <div class="testimonials__card-person">
+                            <img src="./images/testimonial_person.png" alt="man photo" class="testimonials__card-avatar">
+                            <p>Abel Sheldon<span>Entrepreneur</span></p>
+                        </div>
+                    </div>
+                    <div class="testimonials__card">
+                        <img src="./images/stars.svg" alt="stars">
+                        <p class="testimonials__card-text">&quot;It&apos;s worth it, very intuitive and easy to learn about cryptocurrencies.&quot;</p>
+                        <div class="testimonials__card-person">
+                            <img src="./images/testimonial_person2.png" alt="man photo" class="testimonials__card-avatar">
+                            <p>John Clayton<span>Investor</span></p>
+                        </div>
+                    </div>
+                    <div class="testimonials__card">
+                        <img src="./images/stars.svg" alt="stars">
+                        <p class="testimonials__card-text">&quot;Best customer service so far. Amazing in all areas best centralized exchange.&quot;</p>
+                        <div class="testimonials__card-person">
+                            <img src="./images/testimonial_person3.png" alt="woman photo" class="testimonials__card-avatar">
+                            <p>Savanna Bridgers<span>Founder</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

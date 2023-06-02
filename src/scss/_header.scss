@@ -24,7 +24,6 @@
                 opacity: 1;
                 transform: scale(100%);
                 visibility: visible;
-                height: 276px;
 
                 &-arrow {
                     transform: rotate(180deg);
@@ -54,10 +53,10 @@
         font-weight: 500;
         background: #FFFFFF;
         border-radius: 8px;
+        transform-origin: 50% 0;
 
         overflow: hidden;
         opacity: 0;
-        height: 0;
         transform: scale(0);
         visibility: hidden;
         transition: all ease-out 0.1s;
@@ -126,6 +125,11 @@
                 display: flex;
                 align-items: center;
                 width: fit-content;
+                transition: color 0.08s;
+
+                &:hover {
+                    color: $primary;
+                }
             }
         }
     
