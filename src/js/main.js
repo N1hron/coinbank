@@ -6,4 +6,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
     navbar('.header__nav-item', 'active');
     select('#trading-select');
+    select('#footer-select');
 })

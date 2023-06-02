@@ -1,0 +1,51 @@
+.assets {
+    background: $primary-shade50;
+
+    .container {
+        padding: 0 160px;
+    }
+
+    &__content {
+        padding: 48px 0;
+        background-color: $main;
+        border-radius: 24px;
+        background-image: url('./images/assets_pattern.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 160%;
+            letter-spacing: -0.005em;
+            color: #FFF;
+            max-width: 200px;
+            margin-left: 24px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            letter-spacing: 0.005em;
+            color: $neutral400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 8px;
+
+            &::before {
+                content: '';
+                position: relative;
+                display: block;
+                width: 32px;
+                height: 32px;
+                background-image: url('./images/assets_star.svg');
+                left: -8px;
+            }
+        }
+    }
+}

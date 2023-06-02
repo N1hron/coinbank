@@ -1,0 +1,80 @@
+.cta {
+    background: $primary-shade50;
+
+    .container {
+        padding: 100px 160px 32px;
+    }
+
+    &__qr {
+        position: relative;
+        width: 140px;
+        height: 140px;
+        align-self: flex-start;
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 145%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 64px;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background-image: url('./images/cta_arrow.png');
+                height: 33px;
+                width: 16px;
+                top: 157px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    &__phone {
+        position: absolute;
+        bottom: 0;
+        right: 25.35%;
+        z-index: 0;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 1;
+        margin-top: 24px;
+        max-width: 356px;
+
+        h2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 140%;
+            letter-spacing: -0.01em;
+            color: #FFF;
+
+            span {
+                color: $primary-shade;
+            }
+        }
+
+        button {
+            margin-top: 40px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding: 64px 64px 92px;
+        background-color: $primary;
+        border-radius: 24px;
+        overflow: hidden;
+        background-image: url('./images/cta_gradient.png');
+        background-repeat: no-repeat;
+        max-height: 400px;
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+    }
+}

@@ -3,7 +3,8 @@ export default function select(selector) {
           originalOptions = originalSelect.querySelectorAll('option');
 
     const customSelect = document.createElement('div');
-    customSelect.classList.add('trading__select');
+    customSelect.classList.add('select');
+
     const customOptions = Array.from(originalOptions, option => {
         const customOption = document.createElement('li');
         customOption.setAttribute('data-value', option.value);
@@ -16,6 +17,7 @@ export default function select(selector) {
         return customOption;
     });
     
+    originalSelect.style.display = 'none';
     customSelect.innerHTML = `
     <button data-toggle><span>${customOptions[0].textContent}</span><img src="./images/chevron_down.svg" alt="arrow"></button>
     <ul></ul>
@@ -25,6 +27,7 @@ export default function select(selector) {
     });
 
     originalSelect.insertAdjacentElement('afterend', customSelect);
+    
     document.addEventListener('click', (event) => {
         const target = event.target;
         if(customSelect.contains(target)) {
