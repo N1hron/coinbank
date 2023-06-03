@@ -240,14 +240,30 @@
                         <p class="headline__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. </p>
                     </div>
                 </div>
-                <div class="trading__chart-container"></div>
+                <div class="trading__chart-container">
+                    <select name="excr" id="trading-excr-select">
+                        <option value="usd">USD/BTC</option>
+                        <option value="eur">EUR/BTC</option>
+                    </select>
+                    <div class="trading__chart">
+                        <canvas></canvas>
+                        <div class="trading__chart-lines">
+                            <div class="trading__chart-line"></div>
+                            <div class="trading__chart-line"></div>
+                            <div class="trading__chart-line"></div>
+                            <div class="trading__chart-line"></div>
+                            <div class="trading__chart-line"></div>
+                            <div class="trading__chart-line"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="trading__cards">
                     <div class="trading__btc-card">
                         <div class="trading__btc-card-prices">
                             <p>$6278.13<span>Last price</span></p>
                             <p>38.25 BTC<span>Volume (24h)</span></p>
                         </div>
-                        <select id="trading-select">
+                        <select id="trading-months-select">
                             <option value="daily">Daily</option>
                             <option value="monthly">Monthly</option>
                             <option value="yearly">Yearly</option>

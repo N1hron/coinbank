@@ -1,9 +1,10 @@
-export default function select(selector) {
+export default function select(selector, modificator) {
     const originalSelect = document.querySelector(selector),
           originalOptions = originalSelect.querySelectorAll('option');
 
     const customSelect = document.createElement('div');
     customSelect.classList.add('select');
+    if(modificator) customSelect.classList.add(`select_${modificator}`);
 
     const customOptions = Array.from(originalOptions, option => {
         const customOption = document.createElement('li');
@@ -12,14 +13,14 @@ export default function select(selector) {
         customOption.textContent = option.textContent;
         customOption.addEventListener('click', () => {
             originalSelect.value = customOption.getAttribute('data-value');
-            customSelect.querySelector('button>span').textContent = customOption.textContent;
+            customSelect.querySelector('button').textContent = customOption.textContent;
         });
         return customOption;
     });
     
     originalSelect.style.display = 'none';
     customSelect.innerHTML = `
-    <button data-toggle><span>${customOptions[0].textContent}</span><img src="./images/chevron_down.svg" alt="arrow"></button>
+    <button data-toggle>${customOptions[0].textContent}</button>
     <ul></ul>
     `
     customOptions.forEach(option => {

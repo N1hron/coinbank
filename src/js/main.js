@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
     navbar('.header__nav-item', 'active');
-    select('#trading-select');
+    select('#trading-months-select');
     select('#footer-select');
+    select('#trading-excr-select', 'minimal');
 })
