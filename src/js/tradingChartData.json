@@ -1,0 +1,149 @@
+[
+    {
+        "high": 158,
+        "low": 61,
+        "open": 136,
+        "close": 120,
+        "trend": "increase"
+    },
+    {
+        "high": 183,
+        "low": 80,
+        "open": 121,
+        "close": 175,
+        "trend": "decrease"
+    },
+    {
+        "high": 176,
+        "low": 136,
+        "open": 170,
+        "close": 154,
+        "trend": "increase"
+    },
+    {
+        "high": 169,
+        "low": 114,
+        "open": 121,
+        "close": 148,
+        "trend": "decrease"
+    },
+    {
+        "high": 204,
+        "low": 124,
+        "open": 196,
+        "close": 142,
+        "trend": "increase"
+    },
+    {
+        "high": 219,
+        "low": 95,
+        "open": 211,
+        "close": 157,
+        "trend": "increase"
+    },
+    {
+        "high": 185,
+        "low": 105,
+        "open": 123,
+        "close": 177,
+        "trend": "decrease"
+    },
+    {
+        "high": 171,
+        "low": 125,
+        "open": 164,
+        "close": 144,
+        "trend": "increase"
+    },
+    {
+        "high": 125,
+        "low": 85,
+        "open": 119,
+        "close": 103,
+        "trend": "increase"
+    },
+    {
+        "high": 134,
+        "low": 64,
+        "open": 109,
+        "close": 125,
+        "trend": "decrease"
+    },
+    {
+        "high": 142,
+        "low": 87,
+        "open": 120,
+        "close": 136,
+        "trend": "decrease"
+    },
+    {
+        "high": 152,
+        "low": 97,
+        "open": 148,
+        "close": 121,
+        "trend": "increase"
+    },
+    {
+        "high": 164,
+        "low": 84,
+        "open": 156,
+        "close": 102,
+        "trend": "increase"
+    },
+    {
+        "high": 178,
+        "low": 138,
+        "open": 156,
+        "close": 172,
+        "trend": "decrease"
+    },
+    {
+        "high": 186,
+        "low": 131,
+        "open": 164,
+        "close": 180,
+        "trend": "decrease"
+    },
+    {
+        "high": 236,
+        "low": 116,
+        "open": 176,
+        "close": 144,
+        "trend": "increase"
+    },
+    {
+        "high": 211,
+        "low": 131,
+        "open": 191,
+        "close": 151,
+        "trend": "increase"
+    },
+    {
+        "high": 205,
+        "low": 159,
+        "open": 198,
+        "close": 178,
+        "trend": "increase"
+    },
+    {
+        "high": 203,
+        "low": 148,
+        "open": 199,
+        "close": 172,
+        "trend": "increase"
+    },
+    {
+        "high": 201,
+        "low": 121,
+        "open": 139,
+        "close": 193,
+        "trend": "decrease"
+    },
+    {
+        "high": 163,
+        "low": 117,
+        "open": 156,
+        "close": 136,
+        "trend": "increase"
+    }
+]

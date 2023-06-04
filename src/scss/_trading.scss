@@ -23,6 +23,25 @@
         display: flex;
         justify-content: space-between;
 
+        &-months {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            bottom: -28px;
+            
+            li {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 135%;
+                color: $neutral400;
+            }
+        }
+
+        &-wrapper {
+            position: relative;
+        }
+
         &-line {
             height: 6px;
             background-color: $neutral200;
@@ -43,9 +62,7 @@
         flex-direction: column;
 
         canvas {
-            width: 506px;
-            height: 100%;
-            border: 1px solid $neutral100;
+            box-sizing: content-box;
         }
     }
 
