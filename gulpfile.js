@@ -10,6 +10,7 @@ const replace = require('gulp-replace');
 const sourcemaps = require('gulp-sourcemaps');
 const ttf2woff2 = require('gulp-ttf2woff2');
 const browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin');
 
 const dist = path.resolve(__dirname, 'dist');
 
@@ -98,11 +99,11 @@ function watchFiles() {
 // Production
 
 function jsProd() {
-  return src('./src/main.js')
+  return src('./src/js/main.js')
       .pipe(webpack({
         mode: 'production',
         output: {
-            filename: 'script.js'
+            filename: 'main.min.js'
         },
         module: {
             rules: [
@@ -112,18 +113,14 @@ function jsProd() {
                 use: {
                   loader: "babel-loader",
                   options: {
-                    presets: [['@babel/preset-env', {
-                        debug: false,
-                        corejs: '3.30.2',
-                        useBuiltIns: 'usage'
-                    }], '@babel/preset-react']
+                    presets: ['@babel/preset-env']
                   }
                 }
               }
             ]
           }
       }))
-      .pipe(dest(buildDist))
+      .pipe(dest(dist))
 }
 
 function stylesProd() {
@@ -131,15 +128,22 @@ function stylesProd() {
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(autoprefixer())
       .pipe(rename('style.min.css'))
-      .pipe(dest(buildDist));
+      .pipe(dest(dist));
 }
 
 function htmlProd() {
   return src('./src/*.html')
-      .pipe(replace('href="style.css"', 'href="style.min.css"'))
+      .pipe(replace('style.css', 'style.min.css'))
+      .pipe(replace('main.js', 'main.min.js'))
       .pipe(htmlmin({ collapseWhitespace: true }))
-      .pipe(dest(buildDist));
+      .pipe(dest(dist));
+}
+
+function imagesProd() {
+  return src('./src/assets/images/**.*')
+    .pipe(imagemin())
+    .pipe(dest(dist + '/images'));
 }
 
 exports.default = series(clear, parallel(html, styles, js, fonts, images, favicons), watchFiles);
-exports.production = series(parallel(htmlProd, stylesProd, jsProd));
+exports.production = series(clear, parallel(htmlProd, stylesProd, jsProd, imagesProd, fonts, favicons));
