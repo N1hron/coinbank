@@ -145,5 +145,6 @@ function imagesProd() {
     .pipe(dest(dist + '/images'));
 }
 
+exports.clear = clear;
 exports.default = series(clear, parallel(html, styles, js, fonts, images, favicons), watchFiles);
 exports.production = series(clear, parallel(htmlProd, stylesProd, jsProd, imagesProd, fonts, favicons));
