@@ -17,5 +17,9 @@
     .headline {
         text-align: center;
     }
+
+    &_gradient {
+        background: linear-gradient(180deg, #FFFFFF 10.72%, #F7F6FE 93.03%);
+    }
 }
 

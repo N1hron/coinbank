@@ -5,11 +5,13 @@ $main: #0E0637;
 $secondary: #DAF727;
 $neutral100: #F4F4F6;
 $neutral200: #E3E3E8;
+$neutral300: #C8C8D0;
 $neutral400: #9C9CAB;
 $neutral500: #717184;
 $neutral700: #42424D;
 $neutral900: #131316;
 $primary-shade: #D6D1FA;
+$primary-shade200: #E7E3FC;
 $primary-shade100: #EFEDFD;
 $primary-shade50:#F7F6FE;
 $primary: #5235E8;
@@ -84,6 +86,35 @@ ul {
             color: $neutral500;
         }
     }
+
+    &_main {
+        h1 {
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 110%;
+            letter-spacing: -0.01em;
+            margin-top: 24px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $primary;
+
+            &.promo__description {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 155%;
+                text-transform: unset;
+                color: $neutral500;
+                margin-top: 32px;
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 .lines {
@@ -118,3 +149,11 @@ ul {
 @import './assets';
 @import './cta';
 @import './footer';
+
+@import './about-promo';
+@import './mission';
+@import './quotation';
+@import './gallery';
+@import './power';
+@import './founders';
+@import './join-mission';

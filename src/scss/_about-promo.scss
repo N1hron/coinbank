@@ -1,0 +1,25 @@
+.about-promo {
+    margin-top: 96px;
+    padding-top: 64px;
+    background: linear-gradient(0deg, #FFFFFF -10.28%, #EFEDFD 63.13%, #FFFFFF 100%);
+
+    .container {
+        position: relative;
+        z-index: 2;
+        background-image: url('images/dashboard_pattern.png');
+        background-repeat: no-repeat;
+        background-position: center 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__headline {
+        max-width: 826px;
+        text-align: center;
+    }
+
+    img {
+        margin-top: 100px;
+    }
+}

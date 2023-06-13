@@ -6,7 +6,6 @@ export default function navbar(itemSelector, activeClass) {
               parent = target.closest(itemSelector);
 
         if((target.hasAttribute('data-toggle') || target.closest('[data-toggle]')) && parent) {
-            if(parent.contains(parent.querySelector('ul'))) event.preventDefault();
             closeAll(parent);
             parent.classList.toggle(activeClass)
         } else if(!parent) closeAll();
