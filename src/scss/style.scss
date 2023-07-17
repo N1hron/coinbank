@@ -1,5 +1,6 @@
 $main: #0E0637;
 $secondary: #DAF727;
+$neutral50: #F9F9FA;
 $neutral100: #F4F4F6;
 $neutral200: #E3E3E8;
 $neutral300: #C8C8D0;
@@ -155,5 +156,3 @@ ul {
 @import './power';
 @import './founders';
 @import './join-mission';
-
-@import './authentication';

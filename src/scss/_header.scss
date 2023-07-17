@@ -102,6 +102,12 @@
             font-size: 14px;
             line-height: 145%;
 
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+
             &-background {
                 z-index: -1;
                 position: absolute;
@@ -121,7 +127,7 @@
                 transition: all ease-out 0.1s;
             }
     
-            a {
+            a, button {
                 display: flex;
                 align-items: center;
                 width: fit-content;
@@ -135,6 +141,7 @@
     
         &-items {
             display: flex;
+            align-items: center;
             gap: 40px;
         }
     }
