@@ -10,6 +10,15 @@
     line-height: 160%;
     letter-spacing: 0.005em;
     transition: background-color 0.08s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
 
     &:hover {
         background-color: $primary-shade100;
@@ -39,5 +48,9 @@
 
     &_light {
         color: $primary;
+
+        &_dark-font {
+            
+        }
     }
 }

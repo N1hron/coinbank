@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinbank | Sign Up</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section class="auth">
+            <div class="auth__left">
+                <a href="index.html"><img src="./images/coinbank.svg" alt="coinbank"></a>
+                <div class="headline">
+                    <h1 class="headline__title">Create an account</h1>
+                    <p class="headline__description">Let's begin your 30-day risk-free trial.</p>
+                </div>
+                <form class="auth__form">
+                    <div class="auth__inputs">
+                        <div class="auth__input">
+                            <label for="name">Name</label>
+                            <input minlength="3" required class="input input_with-border" id="name" name="name" type="text">
+                        </div>
+                        <div class="auth__input">
+                            <label for="email">Email</label>
+                            <input required type="email" class="input input_with-border" id="email" name="email">
+                        </div>
+                        <div class="auth__input">
+                            <label for="password">Password</label>
+                            <input data-type="password" required type="password" id="password" minlength=8 class="input input_with-border">
+                            <button class="password-visibility" type="button">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M2.01677 10.5946C1.90328 10.4149 1.84654 10.3251 1.81477 10.1865C1.79091 10.0824 1.79091 9.91824 1.81477 9.81415C1.84654 9.67556 1.90328 9.58571 2.01677 9.40601C2.95461 7.92103 5.74617 4.16699 10.0003 4.16699C14.2545 4.16699 17.0461 7.92103 17.9839 9.40601C18.0974 9.58571 18.1541 9.67556 18.1859 9.81415C18.2098 9.91824 18.2098 10.0824 18.1859 10.1865C18.1541 10.3251 18.0974 10.4149 17.9839 10.5946C17.0461 12.0796 14.2545 15.8337 10.0003 15.8337C5.74617 15.8337 2.95461 12.0796 2.01677 10.5946Z" stroke="#9C9CAB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.0003 12.5003C11.381 12.5003 12.5003 11.381 12.5003 10.0003C12.5003 8.61961 11.381 7.50033 10.0003 7.50033C8.61962 7.50033 7.50034 8.61961 7.50034 10.0003C7.50034 11.381 8.61962 12.5003 10.0003 12.5003Z" stroke="#9C9CAB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="auth__form-btns">
+                        <button class="button button_dark">Create account</button>
+                        <button class="button"><img src="./images/google_colored.svg" alt=""> Sign up with Google</button>
+                        <button class="button"><img src="./images/facebook_colored.svg" alt=""> Sign up with Facebook</button>
+                    </div>
+                </form>
+            </div>
+            <div class="auth__right">
+                    
+            </div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

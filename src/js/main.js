@@ -2,6 +2,7 @@ import navbar from './modules/navbar';
 import select from './modules/select';
 import chart from './modules/chart';
 import tradingChartData from './tradingChartData.json';
+import passwordBtn from './modules/passwordBtn';
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -11,4 +12,5 @@ window.addEventListener('DOMContentLoaded', () => {
     select('#footer-select');
     select('#trading-excr-select', 'minimal');
     chart('#trading-chart', tradingChartData);
+    passwordBtn('.auth__form');
 })
